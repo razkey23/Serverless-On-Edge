@@ -11,6 +11,7 @@ Almost everyone knows what a Raspberry Pi is. This mini computer is one the firs
 Most of the people who have grasped the idea of serverless have probably heard about OpenWhisk. OpenWhisk is an open source Serverless platform that executes functions in response to events (**event driven**). These events could be HTTP request or they can be more complex triggers coming from Feeds(like a slack message). 
 The following pictures shows the components of Openwhisk:
 ![openwhisk_components](https://miro.medium.com/max/2400/1*AgbaSrvlqTP1ZnXOJJBJkA.jpeg)
+
 All of these components are Huge Open Source Projects so it is fairly obvious that Openwhisk lies on the shoulders of giants.Openwhisk was built to handle tens of thousands of user actions concurrently ,and wasn't meant to handle those actions from an edge node. Running Openwhisk itself on a constrained edge node is infeasible and not that smart.That's where lean Openwhisk comes in. What's Lean Openwhisk?
 * Lean Openwhisk is a **significantly downsized** Apache Openwhisk which retains the core functionality profile and core components of Openwhisk 
 * Lean Openwhisk is built on the core source code of Openwhisk and it's an official branch of the Apache Openwhisk project on github
