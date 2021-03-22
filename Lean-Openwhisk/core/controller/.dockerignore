@@ -1,0 +1,6 @@
+*
+!init.sh
+!transformEnvironment.sh
+!copyJMXFiles.sh
+!build/distributions
+!build/tmp/docker-coverage

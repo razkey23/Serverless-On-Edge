@@ -1,0 +1,12 @@
+172.17.0.1 - - [20/Feb/2021:19:38:31 +0000] [#tid_5fd552ab4c05b0614be282bcec17b475] GET /cli/go/download/linux/aarch64/wsk HTTP/1.1 301 178 - ansible-httpget -
+172.17.0.1 - - [20/Feb/2021:19:38:31 +0000] [#tid_123cd5187d78be4bd88826171526278f] GET /cli/linux/aarch64/wsk HTTP/1.1 404 162 - ansible-httpget -
+172.17.0.1 - - [20/Feb/2021:19:44:45 +0000] [#tid_a892f52e570917f4a88c4e7f266e0d3b] GET /cli/go/download/linux/aarch64/wsk HTTP/1.1 301 178 - ansible-httpget -
+172.17.0.1 - - [20/Feb/2021:19:44:45 +0000] [#tid_8d9b8ff0ad8158eb8b0ad83b040449c0] GET /cli/linux/aarch64/wsk HTTP/1.1 404 162 - ansible-httpget -
+172.17.0.1 - - [20/Feb/2021:19:52:57 +0000] [#tid_d90e3b184eaae3c54fab49dc75dc005e] GET /cli/go/download/linux/aarch64/wsk HTTP/1.1 301 178 - ansible-httpget -
+172.17.0.1 - - [20/Feb/2021:19:52:57 +0000] [#tid_1e1e48f29448db787e16491e04d2878b] GET /cli/linux/aarch64/wsk HTTP/1.1 404 162 - ansible-httpget -
+172.17.0.1 - - [22/Feb/2021:07:28:31 +0000] [#tid_9695043f6f00f66b66a6b401a7c51672] GET /cli/go/download/linux/arm/wsk HTTP/1.1 301 178 - ansible-httpget -
+172.17.0.1 - - [22/Feb/2021:07:28:31 +0000] [#tid_539c028f0e2b7fb81328402887c69f59] GET /cli/linux/arm/wsk HTTP/1.1 200 10961959 - ansible-httpget -
+172.17.0.1 - - [22/Feb/2021:07:34:49 +0000] [#tid_ac1e9fba2bbf31ab50e4794edbf95684] GET /cli/go/download/linux/arm/wsk HTTP/1.1 301 178 - ansible-httpget -
+172.17.0.1 - - [22/Feb/2021:07:34:49 +0000] [#tid_2d2173f4225bba796d976c46ee91187b] GET /cli/linux/arm/wsk HTTP/1.1 200 10961959 - ansible-httpget -
+172.17.0.1 - - [22/Feb/2021:07:37:13 +0000] [#tid_68f12cf47f64a88d26937cd4dc142d25] GET /cli/go/download/linux/arm/wsk HTTP/1.1 301 178 - ansible-httpget -
+172.17.0.1 - - [22/Feb/2021:07:37:13 +0000] [#tid_17efca13990fffd34dbf9e883dcb5f77] GET /cli/linux/arm/wsk HTTP/1.1 200 10961959 - ansible-httpget -

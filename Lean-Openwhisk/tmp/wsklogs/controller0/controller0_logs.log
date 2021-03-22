@@ -1,0 +1,398 @@
+[2021-02-20T19:37:15.982Z] [INFO] Started the Kamon StatsD reporter
+[2021-02-20T19:37:15.985Z] [INFO] Loaded metric reporter [kamon.statsd.StatsDReporter]
+[2021-02-20T19:37:16.878Z] [INFO] Slf4jLogger started
+[2021-02-20T19:37:18.098Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.triggers.fires.perMinute
+[2021-02-20T19:37:18.099Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.registry
+[2021-02-20T19:37:18.100Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.sequence.maxLength
+[2021-02-20T19:37:18.102Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.concurrent
+[2021-02-20T19:37:18.103Z] [INFO] [#tid_sid_unknown] [Config] environment set value for controller.instances
+[2021-02-20T19:37:18.104Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.name
+[2021-02-20T19:37:18.106Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.perMinute
+[2021-02-20T19:37:18.108Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.proto
+[2021-02-20T19:37:18.109Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.port
+[2021-02-20T19:37:18.111Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.manifest
+[2021-02-20T19:37:18.112Z] [INFO] [#tid_sid_unknown] [Config] environment set value for port
+[2021-02-20T19:37:18.407Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic completed0 created
+[2021-02-20T19:37:18.408Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic health created
+[2021-02-20T19:37:18.410Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic cacheInvalidation created
+[2021-02-20T19:37:18.411Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic events created
+[2021-02-20T19:37:18.834Z] [INFO] [#tid_sid_controller] [Controller] starting controller instance 0 [marker:controller_startup0_count:745]
+[2021-02-20T19:37:20.976Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-20T19:37:21.132Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-20T19:37:21.308Z] [INFO] Slf4jLogger started
+[2021-02-20T19:37:21.765Z] [INFO] [#tid_sid_unknown] [InvokerReactive] LogStoreProvider: class org.apache.openwhisk.core.containerpool.logging.DockerToActivationLogStore
+[2021-02-20T19:37:21.905Z] [INFO] [#tid_sid_unknown] [InvokerReactive] AAAAAAAAAA: poolConfig.userMemory: 1073741824 B, MemoryLimit.minMemory: 134217728 B
+[2021-02-20T19:37:22.550Z] [INFO] [#tid_sid_unknown] [DockerClientWithFileAccess] Detected docker client version 17.12.1-ce
+[2021-02-20T19:37:22.714Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:4626]
+[2021-02-20T19:37:22.926Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:4838:39]
+[2021-02-20T19:37:22.996Z] [INFO] [#tid_sid_invoker] [DockerContainerFactory] removing 0 action containers.
+[2021-02-20T19:37:24.242Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:6153]
+[2021-02-20T19:37:24.380Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 2000, pipeline fill at = 2000, pipeline depth = 4000
+[2021-02-20T19:37:24.403Z] [INFO] [#tid_sid_controller] [Controller] loadbalancer initialized: LeanBalancer
+[2021-02-20T19:37:24.411Z] [INFO] [#tid_sid_invokerWarmup] [ContainerPool] pre-warming 2 nodejs:6 256 MB
+[2021-02-20T19:37:24.586Z] [INFO] [#tid_sid_controller] [KindRestrictor] all kinds are allowed, the white-list is not specified
+[2021-02-20T19:37:24.928Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_1_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6840]
+[2021-02-20T19:37:24.929Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_2_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6840]
+[2021-02-20T19:37:26.506Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:8415:1575]
+[2021-02-20T19:37:26.530Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:8440:1600]
+[2021-02-20T19:37:26.758Z] [INFO] [#tid_sid_controller] [ActionsApi] actionSequenceLimit '50'
+[2021-02-20T19:37:56.693Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:38605:32450]
+[2021-02-20T19:37:56.698Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-20T19:42:24.259Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:306168]
+[2021-02-20T19:42:39.621Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:321532:15361]
+[2021-02-20T19:42:39.624Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-20T19:43:39.031Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:380942]
+[2021-02-20T19:43:39.068Z] [INFO] [#tid_sid_unknown] [Controller] Shutting down Kamon with coordinated shutdown
+[2021-02-20T19:43:39.086Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:380997:54]
+[2021-02-20T19:43:39.100Z] [INFO] [#tid_sid_invoker] [DockerContainerFactory] removing 2 action containers.
+[2021-02-20T19:43:39.102Z] [INFO] [#tid_sid_invoker] [RuncClient] running /usr/bin/docker-runc resume 7d342fbb97e55fd61d39c9c6104fc55e9471507f79eda2396ac23678d0759754 (timeout: 10 seconds) [marker:invoker_runc.resume_start:381014]
+[2021-02-20T19:43:39.110Z] [INFO] [#tid_sid_invoker] [RuncClient] running /usr/bin/docker-runc resume 3c451e0603339246678bf584055da4b78756b8be46541fd883072dda8611bf1a (timeout: 10 seconds) [marker:invoker_runc.resume_start:381021]
+[ERROR] [02/20/2021 19:43:39.190] [pool-4-thread-9] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "7d342fbb97e55fd61d39c9c6104fc55e9471507f79eda2396ac23678d0759754" does not exist [marker:invoker_runc.resume_error:381092:67]
+[ERROR] [02/20/2021 19:43:39.194] [pool-4-thread-8] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "3c451e0603339246678bf584055da4b78756b8be46541fd883072dda8611bf1a" does not exist [marker:invoker_runc.resume_error:381094:72]
+[ERROR] [02/20/2021 19:43:39.226] [pool-4-thread-18] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:381138:17]
+[ERROR] [02/20/2021 19:43:39.226] [pool-4-thread-9] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:381139:18]
+[2021-02-20T19:43:46.757Z] [INFO] Started the Kamon StatsD reporter
+[2021-02-20T19:43:46.760Z] [INFO] Loaded metric reporter [kamon.statsd.StatsDReporter]
+[2021-02-20T19:43:47.674Z] [INFO] Slf4jLogger started
+[2021-02-20T19:43:48.887Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.triggers.fires.perMinute
+[2021-02-20T19:43:48.889Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.registry
+[2021-02-20T19:43:48.891Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.sequence.maxLength
+[2021-02-20T19:43:48.892Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.concurrent
+[2021-02-20T19:43:48.894Z] [INFO] [#tid_sid_unknown] [Config] environment set value for controller.instances
+[2021-02-20T19:43:48.895Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.name
+[2021-02-20T19:43:48.898Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.perMinute
+[2021-02-20T19:43:48.899Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.proto
+[2021-02-20T19:43:48.900Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.port
+[2021-02-20T19:43:48.901Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.manifest
+[2021-02-20T19:43:48.903Z] [INFO] [#tid_sid_unknown] [Config] environment set value for port
+[2021-02-20T19:43:49.193Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic completed0 created
+[2021-02-20T19:43:49.194Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic health created
+[2021-02-20T19:43:49.196Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic cacheInvalidation created
+[2021-02-20T19:43:49.197Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic events created
+[2021-02-20T19:43:49.621Z] [INFO] [#tid_sid_controller] [Controller] starting controller instance 0 [marker:controller_startup0_count:741]
+[2021-02-20T19:43:51.678Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-20T19:43:51.812Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-20T19:43:52.095Z] [INFO] Slf4jLogger started
+[2021-02-20T19:43:52.426Z] [INFO] [#tid_sid_unknown] [InvokerReactive] LogStoreProvider: class org.apache.openwhisk.core.containerpool.logging.DockerToActivationLogStore
+[2021-02-20T19:43:52.553Z] [INFO] [#tid_sid_unknown] [InvokerReactive] AAAAAAAAAA: poolConfig.userMemory: 1073741824 B, MemoryLimit.minMemory: 134217728 B
+[2021-02-20T19:43:53.183Z] [INFO] [#tid_sid_unknown] [DockerClientWithFileAccess] Detected docker client version 17.12.1-ce
+[2021-02-20T19:43:53.325Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:4447]
+[2021-02-20T19:43:53.539Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:4660:37]
+[2021-02-20T19:43:53.598Z] [INFO] [#tid_sid_invoker] [DockerContainerFactory] removing 0 action containers.
+[2021-02-20T19:43:54.870Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:5991]
+[2021-02-20T19:43:55.006Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 2000, pipeline fill at = 2000, pipeline depth = 4000
+[2021-02-20T19:43:55.046Z] [INFO] [#tid_sid_controller] [Controller] loadbalancer initialized: LeanBalancer
+[2021-02-20T19:43:55.050Z] [INFO] [#tid_sid_invokerWarmup] [ContainerPool] pre-warming 2 nodejs:6 256 MB
+[2021-02-20T19:43:55.363Z] [INFO] [#tid_sid_controller] [KindRestrictor] all kinds are allowed, the white-list is not specified
+[2021-02-20T19:43:55.534Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_2_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6656]
+[2021-02-20T19:43:55.536Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_1_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6657]
+[2021-02-20T19:43:56.864Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:7985:1329]
+[2021-02-20T19:43:57.008Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:8123:1466]
+[2021-02-20T19:43:57.886Z] [INFO] [#tid_sid_controller] [ActionsApi] actionSequenceLimit '50'
+[2021-02-20T19:44:10.900Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:22021:16029]
+[2021-02-20T19:44:10.905Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-20T19:48:54.883Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:306004]
+[2021-02-20T19:49:10.277Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:321398:15393]
+[2021-02-20T19:49:10.278Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-20T19:51:47.995Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:479116]
+[2021-02-20T19:51:48.019Z] [INFO] [#tid_sid_unknown] [Controller] Shutting down Kamon with coordinated shutdown
+[2021-02-20T19:51:48.063Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:479185:65]
+[ERROR] [02/20/2021 19:51:48.160] [pool-4-thread-12] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "1b4601b5d0ca15df6abb18e38c7203561ffe77219de7cb45c6a0c64597355519" does not exist [marker:invoker_runc.resume_error:479281:75]
+[ERROR] [02/20/2021 19:51:48.161] [pool-4-thread-15] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "c53deab1f9abdcdf0d68d6bdd11295c1d50893119e625ad0d8aa13f226319b89" does not exist [marker:invoker_runc.resume_error:479275:64]
+[ERROR] [02/20/2021 19:51:48.199] [pool-4-thread-9] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:479322:9]
+[ERROR] [02/20/2021 19:51:48.210] [pool-4-thread-9] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:479333:21]
+[2021-02-20T19:51:56.267Z] [INFO] Started the Kamon StatsD reporter
+[2021-02-20T19:51:56.273Z] [INFO] Loaded metric reporter [kamon.statsd.StatsDReporter]
+[2021-02-20T19:51:57.193Z] [INFO] Slf4jLogger started
+[2021-02-20T19:51:58.424Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.triggers.fires.perMinute
+[2021-02-20T19:51:58.426Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.registry
+[2021-02-20T19:51:58.427Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.sequence.maxLength
+[2021-02-20T19:51:58.428Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.concurrent
+[2021-02-20T19:51:58.430Z] [INFO] [#tid_sid_unknown] [Config] environment set value for controller.instances
+[2021-02-20T19:51:58.431Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.name
+[2021-02-20T19:51:58.432Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.perMinute
+[2021-02-20T19:51:58.434Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.proto
+[2021-02-20T19:51:58.435Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.port
+[2021-02-20T19:51:58.436Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.manifest
+[2021-02-20T19:51:58.437Z] [INFO] [#tid_sid_unknown] [Config] environment set value for port
+[2021-02-20T19:51:58.730Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic completed0 created
+[2021-02-20T19:51:58.732Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic health created
+[2021-02-20T19:51:58.734Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic cacheInvalidation created
+[2021-02-20T19:51:58.736Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic events created
+[2021-02-20T19:51:59.212Z] [INFO] [#tid_sid_controller] [Controller] starting controller instance 0 [marker:controller_startup0_count:794]
+[2021-02-20T19:52:01.354Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-20T19:52:01.486Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-20T19:52:01.768Z] [INFO] Slf4jLogger started
+[2021-02-20T19:52:02.110Z] [INFO] [#tid_sid_unknown] [InvokerReactive] LogStoreProvider: class org.apache.openwhisk.core.containerpool.logging.DockerToActivationLogStore
+[2021-02-20T19:52:02.249Z] [INFO] [#tid_sid_unknown] [InvokerReactive] AAAAAAAAAA: poolConfig.userMemory: 1073741824 B, MemoryLimit.minMemory: 134217728 B
+[2021-02-20T19:52:02.900Z] [INFO] [#tid_sid_unknown] [DockerClientWithFileAccess] Detected docker client version 17.12.1-ce
+[2021-02-20T19:52:03.063Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:4647]
+[2021-02-20T19:52:03.295Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:4879:39]
+[2021-02-20T19:52:03.362Z] [INFO] [#tid_sid_invoker] [DockerContainerFactory] removing 0 action containers.
+[2021-02-20T19:52:04.628Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:6211]
+[2021-02-20T19:52:04.760Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 2000, pipeline fill at = 2000, pipeline depth = 4000
+[2021-02-20T19:52:04.799Z] [INFO] [#tid_sid_controller] [Controller] loadbalancer initialized: LeanBalancer
+[2021-02-20T19:52:04.806Z] [INFO] [#tid_sid_invokerWarmup] [ContainerPool] pre-warming 2 nodejs:6 256 MB
+[2021-02-20T19:52:04.969Z] [INFO] [#tid_sid_controller] [KindRestrictor] all kinds are allowed, the white-list is not specified
+[2021-02-20T19:52:05.292Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_2_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6875]
+[2021-02-20T19:52:05.294Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_1_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6878]
+[2021-02-20T19:52:06.764Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:8330:1450]
+[2021-02-20T19:52:06.786Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:8370:1494]
+[2021-02-20T19:52:07.161Z] [INFO] [#tid_sid_controller] [ActionsApi] actionSequenceLimit '50'
+[2021-02-20T19:52:20.644Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:22228:16013]
+[2021-02-20T19:52:20.650Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-20T19:57:04.640Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:306219]
+[2021-02-20T19:57:20.265Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:321848:15628]
+[2021-02-20T19:57:20.267Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-20T20:02:04.656Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:606238]
+[2021-02-20T20:02:36.183Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:637765:31525]
+[2021-02-20T20:02:36.185Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-20T20:05:11.896Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:793479]
+[2021-02-20T20:05:11.957Z] [INFO] [#tid_sid_unknown] [Controller] Shutting down Kamon with coordinated shutdown
+[ERROR] [02/20/2021 20:05:12.184] [pool-4-thread-18] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] info: command was terminated, took longer than 1 minute, code: 143 (terminated by signal SIGTERM), stdout: , stderr:  [marker:invoker_docker.ps_error:793763:273]
+[2021-02-20T20:06:02.348Z] [INFO] Started the Kamon StatsD reporter
+[2021-02-20T20:06:02.358Z] [INFO] Loaded metric reporter [kamon.statsd.StatsDReporter]
+[2021-02-20T20:06:03.374Z] [INFO] Slf4jLogger started
+[2021-02-20T20:06:04.757Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.triggers.fires.perMinute
+[2021-02-20T20:06:04.758Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.registry
+[2021-02-20T20:06:04.760Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.sequence.maxLength
+[2021-02-20T20:06:04.761Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.concurrent
+[2021-02-20T20:06:04.762Z] [INFO] [#tid_sid_unknown] [Config] environment set value for controller.instances
+[2021-02-20T20:06:04.763Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.name
+[2021-02-20T20:06:04.765Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.perMinute
+[2021-02-20T20:06:04.766Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.proto
+[2021-02-20T20:06:04.767Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.port
+[2021-02-20T20:06:04.768Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.manifest
+[2021-02-20T20:06:04.769Z] [INFO] [#tid_sid_unknown] [Config] environment set value for port
+[2021-02-20T20:06:05.079Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic completed0 created
+[2021-02-20T20:06:05.081Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic health created
+[2021-02-20T20:06:05.085Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic cacheInvalidation created
+[2021-02-20T20:06:05.087Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic events created
+[2021-02-20T20:06:05.575Z] [INFO] [#tid_sid_controller] [Controller] starting controller instance 0 [marker:controller_startup0_count:824]
+[2021-02-20T20:06:07.954Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-20T20:06:08.116Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-20T20:06:08.424Z] [INFO] Slf4jLogger started
+[2021-02-20T20:06:08.766Z] [INFO] [#tid_sid_unknown] [InvokerReactive] LogStoreProvider: class org.apache.openwhisk.core.containerpool.logging.DockerToActivationLogStore
+[2021-02-20T20:06:08.895Z] [INFO] [#tid_sid_unknown] [InvokerReactive] AAAAAAAAAA: poolConfig.userMemory: 1073741824 B, MemoryLimit.minMemory: 134217728 B
+[2021-02-20T20:06:09.847Z] [INFO] [#tid_sid_unknown] [DockerClientWithFileAccess] Detected docker client version 17.12.1-ce
+[2021-02-20T20:06:09.990Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:5242]
+[2021-02-20T20:06:10.193Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:5444:44]
+[2021-02-20T20:06:10.265Z] [INFO] [#tid_sid_invoker] [DockerContainerFactory] removing 2 action containers.
+[2021-02-20T20:06:10.269Z] [INFO] [#tid_sid_invoker] [RuncClient] running /usr/bin/docker-runc resume 3cda85cf26badc62063554443fdeabb1877b8cd81f80ca71de199c7169c4979e (timeout: 10 seconds) [marker:invoker_runc.resume_start:5520]
+[2021-02-20T20:06:10.279Z] [INFO] [#tid_sid_invoker] [RuncClient] running /usr/bin/docker-runc resume f17cdf4733e364eb2f83dba1d4a865b27dc50ec064de1d4429a11a888fd4b682 (timeout: 10 seconds) [marker:invoker_runc.resume_start:5530]
+[2021-02-20T20:06:10.440Z] [ERROR] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "3cda85cf26badc62063554443fdeabb1877b8cd81f80ca71de199c7169c4979e" does not exist [marker:invoker_runc.resume_error:5685:157]
+[2021-02-20T20:06:10.441Z] [ERROR] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "f17cdf4733e364eb2f83dba1d4a865b27dc50ec064de1d4429a11a888fd4b682" does not exist [marker:invoker_runc.resume_error:5685:150]
+[2021-02-20T20:06:10.442Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker rm -f 3cda85cf26badc62063554443fdeabb1877b8cd81f80ca71de199c7169c4979e (timeout: 1 minute) [marker:invoker_docker.rm_start:5693]
+[2021-02-20T20:06:10.446Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker rm -f f17cdf4733e364eb2f83dba1d4a865b27dc50ec064de1d4429a11a888fd4b682 (timeout: 1 minute) [marker:invoker_docker.rm_start:5696]
+[2021-02-20T20:06:10.513Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.rm_finish:5764:67]
+[2021-02-20T20:06:10.515Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.rm_finish:5767:74]
+[2021-02-20T20:06:11.758Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:7010]
+[2021-02-20T20:06:11.896Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 2000, pipeline fill at = 2000, pipeline depth = 4000
+[2021-02-20T20:06:11.922Z] [INFO] [#tid_sid_controller] [Controller] loadbalancer initialized: LeanBalancer
+[2021-02-20T20:06:11.925Z] [INFO] [#tid_sid_invokerWarmup] [ContainerPool] pre-warming 2 nodejs:6 256 MB
+[2021-02-20T20:06:12.236Z] [INFO] [#tid_sid_controller] [KindRestrictor] all kinds are allowed, the white-list is not specified
+[2021-02-20T20:06:12.435Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_1_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:7686]
+[2021-02-20T20:06:12.458Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_2_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:7706]
+[2021-02-20T20:06:13.414Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:8664:1654]
+[2021-02-20T20:06:13.423Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-20T20:06:14.060Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:9308:1601]
+[2021-02-20T20:06:14.111Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:9362:1675]
+[2021-02-20T20:06:14.763Z] [INFO] [#tid_sid_controller] [ActionsApi] actionSequenceLimit '50'
+[2021-02-20T20:07:34.889Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:90140]
+[2021-02-20T20:07:34.916Z] [INFO] [#tid_sid_unknown] [Controller] Shutting down Kamon with coordinated shutdown
+[2021-02-20T20:07:34.971Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:90220:79]
+[ERROR] [02/20/2021 20:07:35.039] [pool-4-thread-12] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "b02da331242f6c22205e110a01bfb7398a7cfc6b14cd34099d97258eb0a846e1" does not exist [marker:invoker_runc.resume_error:90291:66]
+[ERROR] [02/20/2021 20:07:35.023] [pool-4-thread-13] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "c4b47f86f2f96c308c33fca34f4b68490ff26384b84e4c67d7e2f8db993e170f" does not exist [marker:invoker_runc.resume_error:90276:51]
+[ERROR] [02/20/2021 20:07:35.069] [pool-4-thread-5] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:90322:23]
+[ERROR] [02/20/2021 20:07:35.079] [pool-4-thread-13] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:90332:33]
+[2021-02-22T07:27:20.314Z] [INFO] Loaded metric reporter [kamon.statsd.StatsDReporter]
+[2021-02-22T07:27:20.312Z] [INFO] Started the Kamon StatsD reporter
+[2021-02-22T07:27:21.215Z] [INFO] Slf4jLogger started
+[2021-02-22T07:27:22.479Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.triggers.fires.perMinute
+[2021-02-22T07:27:22.480Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.registry
+[2021-02-22T07:27:22.482Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.sequence.maxLength
+[2021-02-22T07:27:22.483Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.concurrent
+[2021-02-22T07:27:22.484Z] [INFO] [#tid_sid_unknown] [Config] environment set value for controller.instances
+[2021-02-22T07:27:22.486Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.name
+[2021-02-22T07:27:22.487Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.perMinute
+[2021-02-22T07:27:22.488Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.proto
+[2021-02-22T07:27:22.490Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.port
+[2021-02-22T07:27:22.491Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.manifest
+[2021-02-22T07:27:22.495Z] [INFO] [#tid_sid_unknown] [Config] environment set value for port
+[2021-02-22T07:27:22.805Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic completed0 created
+[2021-02-22T07:27:22.806Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic health created
+[2021-02-22T07:27:22.807Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic cacheInvalidation created
+[2021-02-22T07:27:22.809Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic events created
+[2021-02-22T07:27:23.265Z] [INFO] [#tid_sid_controller] [Controller] starting controller instance 0 [marker:controller_startup0_count:793]
+[2021-02-22T07:27:25.395Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-22T07:27:25.529Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-22T07:27:25.707Z] [INFO] Slf4jLogger started
+[2021-02-22T07:27:26.162Z] [INFO] [#tid_sid_unknown] [InvokerReactive] LogStoreProvider: class org.apache.openwhisk.core.containerpool.logging.DockerToActivationLogStore
+[2021-02-22T07:27:26.309Z] [INFO] [#tid_sid_unknown] [InvokerReactive] AAAAAAAAAA: poolConfig.userMemory: 1073741824 B, MemoryLimit.minMemory: 134217728 B
+[2021-02-22T07:27:26.973Z] [INFO] [#tid_sid_unknown] [DockerClientWithFileAccess] Detected docker client version 17.12.1-ce
+[2021-02-22T07:27:27.134Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:4663]
+[2021-02-22T07:27:27.352Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:4882:42]
+[2021-02-22T07:27:27.415Z] [INFO] [#tid_sid_invoker] [DockerContainerFactory] removing 0 action containers.
+[2021-02-22T07:27:28.695Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:6224]
+[2021-02-22T07:27:28.833Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 2000, pipeline fill at = 2000, pipeline depth = 4000
+[2021-02-22T07:27:28.858Z] [INFO] [#tid_sid_controller] [Controller] loadbalancer initialized: LeanBalancer
+[2021-02-22T07:27:28.860Z] [INFO] [#tid_sid_invokerWarmup] [ContainerPool] pre-warming 2 nodejs:6 256 MB
+[2021-02-22T07:27:29.195Z] [INFO] [#tid_sid_controller] [KindRestrictor] all kinds are allowed, the white-list is not specified
+[2021-02-22T07:27:29.463Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_2_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6987]
+[2021-02-22T07:27:29.464Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_1_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6987]
+[2021-02-22T07:27:29.955Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:7485:1259]
+[2021-02-22T07:27:29.962Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-22T07:27:32.691Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:10220:3233]
+[2021-02-22T07:27:32.786Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:10290:3302]
+[2021-02-22T07:27:32.927Z] [INFO] [#tid_sid_controller] [ActionsApi] actionSequenceLimit '50'
+[2021-02-22T07:32:28.710Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:306235]
+[2021-02-22T07:32:28.859Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:306388:151]
+[2021-02-22T07:32:28.860Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-22T07:33:39.521Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:377050]
+[2021-02-22T07:33:39.543Z] [INFO] [#tid_sid_unknown] [Controller] Shutting down Kamon with coordinated shutdown
+[ERROR] [02/22/2021 07:33:39.690] [pool-4-thread-17] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "643122d5f4e3ebe58afc6fe403d4b330d84a691e1206a76b91755d1f368edfda" does not exist [marker:invoker_runc.resume_error:377220:47]
+[ERROR] [02/22/2021 07:33:39.690] [pool-4-thread-8] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "4eb6f19379dbf93e74849b42aa011cc0f5579e982ea69a8a03b6e6a7fd61217a" does not exist [marker:invoker_runc.resume_error:377216:68]
+[ERROR] [02/22/2021 07:33:39.733] [pool-4-thread-11] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:377263:22]
+[ERROR] [02/22/2021 07:33:39.734] [pool-4-thread-17] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:377265:24]
+[2021-02-22T07:33:47.888Z] [INFO] Started the Kamon StatsD reporter
+[2021-02-22T07:33:47.891Z] [INFO] Loaded metric reporter [kamon.statsd.StatsDReporter]
+[2021-02-22T07:33:48.776Z] [INFO] Slf4jLogger started
+[2021-02-22T07:33:50.049Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.triggers.fires.perMinute
+[2021-02-22T07:33:50.050Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.registry
+[2021-02-22T07:33:50.052Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.sequence.maxLength
+[2021-02-22T07:33:50.053Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.concurrent
+[2021-02-22T07:33:50.054Z] [INFO] [#tid_sid_unknown] [Config] environment set value for controller.instances
+[2021-02-22T07:33:50.055Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.name
+[2021-02-22T07:33:50.057Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.perMinute
+[2021-02-22T07:33:50.058Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.proto
+[2021-02-22T07:33:50.059Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.port
+[2021-02-22T07:33:50.060Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.manifest
+[2021-02-22T07:33:50.061Z] [INFO] [#tid_sid_unknown] [Config] environment set value for port
+[2021-02-22T07:33:50.371Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic completed0 created
+[2021-02-22T07:33:50.373Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic health created
+[2021-02-22T07:33:50.374Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic cacheInvalidation created
+[2021-02-22T07:33:50.375Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic events created
+[2021-02-22T07:33:50.808Z] [INFO] [#tid_sid_controller] [Controller] starting controller instance 0 [marker:controller_startup0_count:766]
+[2021-02-22T07:33:52.968Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-22T07:33:53.105Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-22T07:33:53.393Z] [INFO] Slf4jLogger started
+[2021-02-22T07:33:53.727Z] [INFO] [#tid_sid_unknown] [InvokerReactive] LogStoreProvider: class org.apache.openwhisk.core.containerpool.logging.DockerToActivationLogStore
+[2021-02-22T07:33:53.865Z] [INFO] [#tid_sid_unknown] [InvokerReactive] AAAAAAAAAA: poolConfig.userMemory: 1073741824 B, MemoryLimit.minMemory: 134217728 B
+[2021-02-22T07:33:54.517Z] [INFO] [#tid_sid_unknown] [DockerClientWithFileAccess] Detected docker client version 17.12.1-ce
+[2021-02-22T07:33:54.680Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:4639]
+[2021-02-22T07:33:54.896Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:4855:38]
+[2021-02-22T07:33:54.972Z] [INFO] [#tid_sid_invoker] [DockerContainerFactory] removing 0 action containers.
+[2021-02-22T07:33:56.233Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:6184]
+[2021-02-22T07:33:56.386Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 2000, pipeline fill at = 2000, pipeline depth = 4000
+[2021-02-22T07:33:56.421Z] [INFO] [#tid_sid_controller] [Controller] loadbalancer initialized: LeanBalancer
+[2021-02-22T07:33:56.434Z] [INFO] [#tid_sid_invokerWarmup] [ContainerPool] pre-warming 2 nodejs:6 256 MB
+[2021-02-22T07:33:56.779Z] [INFO] [#tid_sid_controller] [KindRestrictor] all kinds are allowed, the white-list is not specified
+[2021-02-22T07:33:56.970Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_2_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6930]
+[2021-02-22T07:33:56.975Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_1_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6934]
+[2021-02-22T07:33:57.231Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:7190:997]
+[2021-02-22T07:33:57.249Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-22T07:33:58.344Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:8297:1361]
+[2021-02-22T07:33:58.534Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:8491:1561]
+[2021-02-22T07:33:59.416Z] [INFO] [#tid_sid_controller] [ActionsApi] actionSequenceLimit '50'
+[2021-02-22T07:36:04.236Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:134196]
+[2021-02-22T07:36:04.263Z] [INFO] [#tid_sid_unknown] [Controller] Shutting down Kamon with coordinated shutdown
+[2021-02-22T07:36:04.297Z] [INFO] Message [org.apache.openwhisk.core.connector.MessageFeed$FillCompleted] from Actor[akka://controller-actor-system/user/$b#277182097] to Actor[akka://controller-actor-system/user/$b#277182097] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[ERROR] [02/22/2021 07:36:04.414] [pool-4-thread-13] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "66db367b67a1fc269887a2640d9f37d4f4625bb22f360db97a39dcb08aa2a376" does not exist [marker:invoker_runc.resume_error:134371:77]
+[ERROR] [02/22/2021 07:36:04.414] [pool-4-thread-8] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "d4248d0fc548a7065d84edb41fb469bec6d8241615704c02f469060d61812288" does not exist [marker:invoker_runc.resume_error:134370:68]
+[ERROR] [02/22/2021 07:36:04.453] [pool-4-thread-3] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:134413:21]
+[ERROR] [02/22/2021 07:36:04.458] [pool-4-thread-3] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:134419:27]
+[2021-02-22T07:36:12.405Z] [INFO] Started the Kamon StatsD reporter
+[2021-02-22T07:36:12.408Z] [INFO] Loaded metric reporter [kamon.statsd.StatsDReporter]
+[2021-02-22T07:36:13.338Z] [INFO] Slf4jLogger started
+[2021-02-22T07:36:14.591Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.triggers.fires.perMinute
+[2021-02-22T07:36:14.592Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.registry
+[2021-02-22T07:36:14.593Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.sequence.maxLength
+[2021-02-22T07:36:14.594Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.concurrent
+[2021-02-22T07:36:14.596Z] [INFO] [#tid_sid_unknown] [Config] environment set value for controller.instances
+[2021-02-22T07:36:14.597Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.name
+[2021-02-22T07:36:14.598Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.perMinute
+[2021-02-22T07:36:14.599Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.proto
+[2021-02-22T07:36:14.601Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.port
+[2021-02-22T07:36:14.603Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.manifest
+[2021-02-22T07:36:14.605Z] [INFO] [#tid_sid_unknown] [Config] environment set value for port
+[2021-02-22T07:36:14.921Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic completed0 created
+[2021-02-22T07:36:14.923Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic health created
+[2021-02-22T07:36:14.924Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic cacheInvalidation created
+[2021-02-22T07:36:14.925Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic events created
+[2021-02-22T07:36:15.370Z] [INFO] [#tid_sid_controller] [Controller] starting controller instance 0 [marker:controller_startup0_count:787]
+[2021-02-22T07:36:17.507Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-22T07:36:17.769Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-22T07:36:17.957Z] [INFO] Slf4jLogger started
+[2021-02-22T07:36:18.291Z] [INFO] [#tid_sid_unknown] [InvokerReactive] LogStoreProvider: class org.apache.openwhisk.core.containerpool.logging.DockerToActivationLogStore
+[2021-02-22T07:36:18.430Z] [INFO] [#tid_sid_unknown] [InvokerReactive] AAAAAAAAAA: poolConfig.userMemory: 1073741824 B, MemoryLimit.minMemory: 134217728 B
+[2021-02-22T07:36:19.093Z] [INFO] [#tid_sid_unknown] [DockerClientWithFileAccess] Detected docker client version 17.12.1-ce
+[2021-02-22T07:36:19.255Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:4674]
+[2021-02-22T07:36:19.476Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:4895:36]
+[2021-02-22T07:36:19.536Z] [INFO] [#tid_sid_invoker] [DockerContainerFactory] removing 0 action containers.
+[2021-02-22T07:36:20.793Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:6211]
+[2021-02-22T07:36:20.943Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 2000, pipeline fill at = 2000, pipeline depth = 4000
+[2021-02-22T07:36:20.972Z] [INFO] [#tid_sid_controller] [Controller] loadbalancer initialized: LeanBalancer
+[2021-02-22T07:36:20.975Z] [INFO] [#tid_sid_invokerWarmup] [ContainerPool] pre-warming 2 nodejs:6 256 MB
+[2021-02-22T07:36:21.139Z] [INFO] [#tid_sid_controller] [KindRestrictor] all kinds are allowed, the white-list is not specified
+[2021-02-22T07:36:21.529Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_1_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6948]
+[2021-02-22T07:36:21.537Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 256 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_2_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:6955]
+[2021-02-22T07:36:21.786Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:7204:992]
+[2021-02-22T07:36:21.793Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-22T07:36:23.064Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:8482:1532]
+[2021-02-22T07:36:23.164Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:8582:1624]
+[2021-02-22T07:36:23.785Z] [INFO] [#tid_sid_controller] [ActionsApi] actionSequenceLimit '50'
+[2021-02-22T07:38:30.191Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:135610]
+[2021-02-22T07:38:30.210Z] [INFO] [#tid_sid_unknown] [Controller] Shutting down Kamon with coordinated shutdown
+[2021-02-22T07:38:30.264Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:135682:70]
+[ERROR] [02/22/2021 07:38:30.370] [pool-4-thread-19] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "60f214c96f03e86540c08e72e4a0437efbb2786e9ac3606a5363f2bc03ad7235" does not exist [marker:invoker_runc.resume_error:135777:75]
+[ERROR] [02/22/2021 07:38:30.370] [pool-4-thread-11] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "ab5fdc986edaba11cd3e499c0fbd4bd182c3dd227d34020a6de656f135068b0e" does not exist [marker:invoker_runc.resume_error:135777:65]
+[ERROR] [02/22/2021 07:38:30.409] [pool-4-thread-13] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:135827:21]
+[ERROR] [02/22/2021 07:38:30.414] [pool-4-thread-13] [Controller$(akka://controller-actor-system)] [#tid_sid_invoker] [DockerClientWithFileAccess] cannot enqueue after timer shutdown [marker:invoker_docker.rm_error:135834:27]
+[2021-02-22T09:27:17.683Z] [INFO] Started the Kamon StatsD reporter
+[2021-02-22T09:27:17.686Z] [INFO] Loaded metric reporter [kamon.statsd.StatsDReporter]
+[2021-02-22T09:27:18.597Z] [INFO] Slf4jLogger started
+[2021-02-22T09:27:19.832Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.triggers.fires.perMinute
+[2021-02-22T09:27:19.834Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.registry
+[2021-02-22T09:27:19.835Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.sequence.maxLength
+[2021-02-22T09:27:19.836Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.concurrent
+[2021-02-22T09:27:19.838Z] [INFO] [#tid_sid_unknown] [Config] environment set value for controller.instances
+[2021-02-22T09:27:19.839Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.name
+[2021-02-22T09:27:19.840Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.perMinute
+[2021-02-22T09:27:19.841Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.proto
+[2021-02-22T09:27:19.843Z] [INFO] [#tid_sid_unknown] [Config] environment set value for whisk.api.host.port
+[2021-02-22T09:27:19.844Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.manifest
+[2021-02-22T09:27:19.845Z] [INFO] [#tid_sid_unknown] [Config] environment set value for port
+[2021-02-22T09:27:20.138Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic completed0 created
+[2021-02-22T09:27:20.139Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic health created
+[2021-02-22T09:27:20.140Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic cacheInvalidation created
+[2021-02-22T09:27:20.142Z] [INFO] [#tid_sid_unknown] [LeanMessagingProvider] topic events created
+[2021-02-22T09:27:20.588Z] [INFO] [#tid_sid_controller] [Controller] starting controller instance 0 [marker:controller_startup0_count:763]
+[2021-02-22T09:27:22.754Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-22T09:27:23.002Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-22T09:27:23.187Z] [INFO] Slf4jLogger started
+[2021-02-22T09:27:23.539Z] [INFO] [#tid_sid_unknown] [InvokerReactive] LogStoreProvider: class org.apache.openwhisk.core.containerpool.logging.DockerToActivationLogStore
+[2021-02-22T09:27:23.678Z] [INFO] [#tid_sid_unknown] [InvokerReactive] AAAAAAAAAA: poolConfig.userMemory: 1610612736 B, MemoryLimit.minMemory: 134217728 B
+[2021-02-22T09:27:24.351Z] [INFO] [#tid_sid_unknown] [DockerClientWithFileAccess] Detected docker client version 17.12.1-ce
+[2021-02-22T09:27:24.535Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker ps --quiet --no-trunc --all --filter name=wsk0_ (timeout: 1 minute) [marker:invoker_docker.ps_start:4712]
+[2021-02-22T09:27:24.751Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.ps_finish:4928:38]
+[2021-02-22T09:27:24.817Z] [INFO] [#tid_sid_invoker] [DockerContainerFactory] removing 2 action containers.
+[2021-02-22T09:27:24.821Z] [INFO] [#tid_sid_invoker] [RuncClient] running /usr/bin/docker-runc resume 55e7a89733305811d40d83110bf8dce0c4e680d7473a9ae112bb7b60c4bd819f (timeout: 10 seconds) [marker:invoker_runc.resume_start:4998]
+[2021-02-22T09:27:24.829Z] [INFO] [#tid_sid_invoker] [RuncClient] running /usr/bin/docker-runc resume 3bd075bf7ca6a5948fcec0a5b13a20fc6736320155c7b7608392561aa23bc3fc (timeout: 10 seconds) [marker:invoker_runc.resume_start:5005]
+[2021-02-22T09:27:24.866Z] [ERROR] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "3bd075bf7ca6a5948fcec0a5b13a20fc6736320155c7b7608392561aa23bc3fc" does not exist [marker:invoker_runc.resume_error:5036:25]
+[2021-02-22T09:27:24.868Z] [ERROR] [#tid_sid_invoker] [RuncClient] info: command was unsuccessful, code: 1 (unsuccessful), stdout: , stderr: container "55e7a89733305811d40d83110bf8dce0c4e680d7473a9ae112bb7b60c4bd819f" does not exist [marker:invoker_runc.resume_error:5036:33]
+[2021-02-22T09:27:24.869Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker rm -f 55e7a89733305811d40d83110bf8dce0c4e680d7473a9ae112bb7b60c4bd819f (timeout: 1 minute) [marker:invoker_docker.rm_start:5044]
+[2021-02-22T09:27:24.872Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess] running /usr/bin/docker rm -f 3bd075bf7ca6a5948fcec0a5b13a20fc6736320155c7b7608392561aa23bc3fc (timeout: 1 minute) [marker:invoker_docker.rm_start:5049]
+[2021-02-22T09:27:25.327Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.rm_finish:5503:453]
+[2021-02-22T09:27:25.474Z] [INFO] [#tid_sid_invoker] [DockerClientWithFileAccess]  [marker:invoker_docker.rm_finish:5650:605]
+[2021-02-22T09:27:26.793Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore] [QUERY] 'whisk_local_subjects' searching 'namespaceThrottlings/blockedNamespaces [marker:database_queryView_start:6969]
+[2021-02-22T09:27:26.940Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 3000, pipeline fill at = 3000, pipeline depth = 6000
+[2021-02-22T09:27:26.979Z] [INFO] [#tid_sid_controller] [Controller] loadbalancer initialized: LeanBalancer
+[2021-02-22T09:27:26.983Z] [INFO] [#tid_sid_invokerWarmup] [ContainerPool] pre-warming 2 nodejs:6 256 MB
+[2021-02-22T09:27:27.307Z] [INFO] [#tid_sid_controller] [KindRestrictor] all kinds are allowed, the white-list is not specified
+[2021-02-22T09:27:27.524Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 170 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_1_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:7700]
+[2021-02-22T09:27:27.525Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess] running /usr/bin/docker run -d --cpu-shares 170 --memory 256m --memory-swap 256m --network bridge -e __OW_API_HOST=https://172.17.0.1:443 --name wsk0_2_prewarm_nodejs6 --pids-limit 1024 --cap-drop NET_RAW --cap-drop NET_ADMIN --ulimit nofile=1024:1024 --log-driver json-file --env __OW_ALLOW_CONCURRENT=True kpavel/nodejs6action:rpi (timeout: 1 minute) [marker:invoker_docker.run_start:7701]
+[2021-02-22T09:27:27.710Z] [INFO] [#tid_sid_invoker] [CouchDbRestStore]  [marker:database_queryView_finish:7885:915]
+[2021-02-22T09:27:27.720Z] [INFO] [#tid_sid_unknown] [InvokerReactive] updated blacklist to 0 entries
+[2021-02-22T09:27:28.981Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:9157:1456]
+[2021-02-22T09:27:29.007Z] [INFO] [#tid_sid_invokerWarmup] [DockerClientWithFileAccess]  [marker:invoker_docker.run_finish:9184:1483]
+[2021-02-22T09:27:30.034Z] [INFO] [#tid_sid_controller] [ActionsApi] actionSequenceLimit '50'
