@@ -37,6 +37,7 @@ for i in range(len(y)):
 
 plt.legend(fontsize='x-small')
 plt.xlabel('Concurrency')
+plt.xticks(concurrency)
 plt.ylabel('Latency(ms)')
 plt.title('Concurrency-Latency')
 plt.savefig('Payloadplot_Latency.png')
@@ -73,6 +74,7 @@ for i in range(len(y)):
     plt.plot(concurrency,y[i][0],label=y[i][1],marker='x')
     plt.xticks(concurrency)
 
+plt.xticks(concurrency)
 plt.legend(fontsize='x-small')
 plt.xlabel('Concurrency')
 plt.ylabel('Throughput(Request per Second)')
