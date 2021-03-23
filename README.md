@@ -106,7 +106,7 @@ NAMESPACE=guest
 We have now successfuly set up Lean Openwhisk. We can now create some actions and invoke them.However, doing that wouldn't be so fun ,so what we wanted to do with Lean Openwhisk was test it and see how efficient or inefficient it is.Is it worth using Lean Openwhisk on edge? What level of concurrency can we achieve in these performance-constrained machines? How bad are the cold-start times ,and what is the upper limit of payload a RPi can handle? Results and metrics are provided in this section
 
 ##### Experiments & Metrics
-We used the tests constructed by the creators of Lean-Openwhisk to cross-check their findings and see if the same performance is achieved by our own setup. We used this repository [lean-performance-evaluation](https://github.com/kpavel/lean-openwhisk-performance) for the followint Expiriments. 
+We used the tests constructed by the creators of Lean-Openwhisk to cross-check their findings and see if the same performance is achieved by our own setup. We used this repository [lean-performance-evaluation](https://github.com/kpavel/lean-openwhisk-performance) for the following Experiments. 
 ##### Experiment A
 How changing back-end concurrency (how many simultaneous actions Lean OpenWhisk can execute) affects latency and throughput using a small payload
 
