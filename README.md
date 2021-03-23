@@ -109,6 +109,7 @@ We have now successfuly set up Lean Openwhisk. We can now create some actions an
 We used the tests constructed by the creators of Lean-Openwhisk to cross-check their findings and see if the same performance is achieved by our own setup. We used this repository [lean-performance-evaluation](https://github.com/kpavel/lean-openwhisk-performance) for the followint Expiriments. 
 ##### Experiment A
 How changing back-end concurrency (how many simultaneous actions Lean OpenWhisk can execute) affects latency and throughput using a small payload
+
 ![concurrency-latency](https://github.com/razkey23/Serverless-On-Edge/blob/main/Lean-Openwhisk-Evaluation/Results/Concurrency-Latency_Througput/Concurrency-Latency.png?raw=true)
 
 ![concurrency-throughput](https://github.com/razkey23/Serverless-On-Edge/blob/main/Lean-Openwhisk-Evaluation/Results/Concurrency-Latency_Througput/Concurrency-RPS.png?raw=true)
@@ -118,8 +119,10 @@ Takeaways: Average Latency increases when we increase the backend concurrency wh
 Keeping concurrency range from 1 to 5 ,we wanted to observe how different payloads affect latency and throughput. 
 ![payloads-latency](https://github.com/razkey23/Serverless-On-Edge/blob/main/Lean-Openwhisk-Evaluation/Results/Payload-Latency_Throughput/Payloadplot_Latency.png?raw=true)
 ![payloads-throughput](https://github.com/razkey23/Serverless-On-Edge/blob/main/Lean-Openwhisk-Evaluation/Results/Payload-Latency_Throughput/Payloadplot_Throughput.png?raw=true)
+
 Takeaways: Payloads affect latency (as expected) due to the fact that the device we run these experimenets on is resource constrained.Throughput is acceptable only if we use small payloads (approx. 1K-50K) and the same applies to latency since as we can easily observe it skyrockets with high payloads. Payloads above 100KB have a pretty high latency. Possible solution which needs further investigation is using sequential action invokes so that high payload functions are converted into many smaller ones. 
 ##### Experiment C
 To examine how efficient existing serverless platforms transfer data between functions ,we use a testcase provided by [ServerlessBench](https://github.com/SJTU-IPADS/ServerlessBench/tree/master/Testcase5-Data-transfer-costs/OpenWhisk) slightly changed so that it can run on Lean Openwhisk. We evaluate a Node.js serverless application which transfers images with different sizes. Our intent is to find if there is a payload-high that causes an unacceptable deteriorated performance.
 ![payload-latency](https://github.com/razkey23/Serverless-On-Edge/blob/main/Lean-Openwhisk-Evaluation/Results/ServerlessBench-Testcase5-Results/Payload_Latency_DataTransfer.png?raw=true)
+
 Takeaway: It's fairly obvious that increasing data transfer payload above 200K is discouraged. What is really optimistic is that payloads up to 100K do not increase latency significantly which gives a lot of room for improvement in optimizing the way functions are scheduled (sequence of functions) in order to achieve maximum performance
