@@ -30,15 +30,15 @@ We wanted to setup the Lean OpenWhisk on our Raspberry Pi and then play with/tes
 1. pip 19.1 ( I had some trouble installing OpenWhisk using a later version)
 2. ansible 2.7.9 (**Strongly recommended to have 2.7.9 since 2.8+ will require changes in parts of the source code**)
 3. Docker (I freshly installed to be 100% sure) using the following commands
-3a. ```sudo curl -sSL https://get.docker.com | sh``` 
-3b. ```sudo usermod -aG docker pi```
-3c. ```exec su -l $USER```
-3d. ```docker ps``` (To make sure docker works)
-3e. ```sudo pip install docker-py``` (Python lib fro Docker Engine API)
+*  ```sudo curl -sSL https://get.docker.com | sh``` 
+*  ```sudo usermod -aG docker pi```
+*  ```exec su -l $USER```
+*  ```docker ps``` (To make sure docker works)
+*  ```sudo pip install docker-py``` (Python lib fro Docker Engine API)
 
 Assuming that we installed all the recommended versions of the needed tools as described above ,we now move to the Lean OpenWhisk part. You can either download the code provided by the creators of lean openwhisk and perform some minor tweaks to get it to work with a Raspberry Pi 4 or you can clone this repository and use the provided code above. 
 * Creators Repo : ```git clone --single-branch --branch rpi-lean https://github.com/kpavel/incubator-openwhisk.git```
-* My tweaked Code is under /incubator-openwhisk/
+* My tweaked Code is under /Lean-Openwhisk/
 *(Disclaimer: The tweaks needed are 3-4 and can easily be performed ,I would suggest cloning the creators Repo and troubleshoot yourself to get a better understanding of the installation process)*
 
 ##### **Step 1**
