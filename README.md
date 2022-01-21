@@ -1,4 +1,7 @@
 # Serverless-On-Edge
+
+Part of ***FaaS and Curious: Performance Implications of ServerlessFunctions on Edge Computing Platforms, 11 2021, pp. 428–438.***
+
 ## Introduction
 Edge goes hand in hand with event driven architecture since most edge workloads (especially IoT ones) are event driven. In this repo we'll scratch the surface of the serverless architecture on edge nodes. More specifically, this repo contains all the code needed to explore the fundamentals of a Serverless architecture on Edge Devices. To complete this project the following *tools* were used :
 * Raspberry Pi 4 (Using Raspbian OS)
