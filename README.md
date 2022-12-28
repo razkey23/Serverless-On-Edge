@@ -9,10 +9,10 @@ Edge goes hand in hand with event driven architecture since most edge workloads 
 
 ## Raspberry Pi 4 & Lean Openwhisk
 ### Raspberry
-Almost everyone knows what a Raspberry Pi is. This mini computer is one the first examples that comes to mind when we think about edge nodes.(Even though their computational power has rised to pc standards). In this project we used a Raspberry Pi 4 ,64-bit architecture, 4GB ram equipped with raspbian OS.These hardware specification to run a similar project are not necessary. This raspberry might even be an overkill for the overall project.Even a more performance-constrained device could probably manage all the tasks we are about to do.
+Almost everyone knows what a Raspberry Pi is. This mini computer is one the first examples that comes to mind when we think about edge nodes.(Even though their computational power has rised to pc standards). In this project we used a Raspberry Pi 4 ,64-bit architecture, 4GB ram equipped with raspbian OS.These hardware specification to run a similar project are not necessary. This raspberry might even be an overkill for the overall project. Even a more performance-constrained device could probably manage all the tasks we are about to do.
 ### Lean OpenWhisk
 Most of the people who have grasped the idea of serverless have probably heard about OpenWhisk. OpenWhisk is an open source Serverless platform that executes functions in response to events (**event driven**). These events could be HTTP request or they can be more complex triggers coming from Feeds(like a slack message). 
-The following pictures shows the components of Openwhisk:
+The following pictures depict the components of Openwhisk:
 ![openwhisk_components](https://miro.medium.com/max/2400/1*AgbaSrvlqTP1ZnXOJJBJkA.jpeg)
 All of these components are Huge Open Source Projects so it is fairly obvious that Openwhisk lies on the shoulders of giants.Openwhisk was built to handle tens of thousands of user actions concurrently ,and wasn't meant to handle those actions from an edge node. Running Openwhisk itself on a constrained edge node is infeasible and not that smart.That's where lean Openwhisk comes in. What's Lean Openwhisk?
 * Lean Openwhisk is a **significantly downsized** Apache Openwhisk which retains the core functionality profile and core components of Openwhisk 
@@ -27,9 +27,9 @@ The core differences are:
 3. Removal of Kafka (biggest impact in reducing size) which is now mimiced by an in-memory-queue. 
 
 ### The project 
-Now that we got all the theoretic fundamentals out of the way ,let's move to what this project is.
+Now that we got all the theoretic fundamentals out of the way, let's move to what this project is.
 #### Setup
-We wanted to setup the Lean OpenWhisk on our Raspberry Pi and then play with/test it. Before setting up Lean Openwhisk there are some prerequisites that should be installed. 
+We wanted to setup Lean OpenWhisk on our Raspberry Pi and then play with/test it. Before setting up Lean Openwhisk there are some prerequisites that should be installed. 
 1. pip 19.1 ( I had some trouble installing OpenWhisk using a later version)
 2. ansible 2.7.9 (**Strongly recommended to have 2.7.9 since 2.8+ will require changes in parts of the source code**)
 3. Docker (I freshly installed to be 100% sure) using the following commands
